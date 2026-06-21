@@ -1,72 +1,37 @@
 package com.macro.mall.model;
 
+import io.swagger.v3.oas.annotations.media.Schema;
 import java.io.Serializable;
 import java.util.Date;
 
 public class UmsPermission implements Serializable {
     private Long id;
 
-    /**
-     * 父级权限id
-     *
-     * @mbggenerated
-     */
+    @Schema(title = "父级权限id")
     private Long pid;
 
-    /**
-     * 名称
-     *
-     * @mbggenerated
-     */
+    @Schema(title = "名称")
     private String name;
 
-    /**
-     * 权限值
-     *
-     * @mbggenerated
-     */
+    @Schema(title = "权限值")
     private String value;
 
-    /**
-     * 图标
-     *
-     * @mbggenerated
-     */
+    @Schema(title = "图标")
     private String icon;
 
-    /**
-     * 权限类型：0->目录；1->菜单；2->按钮（接口绑定权限）
-     *
-     * @mbggenerated
-     */
+    @Schema(title = "权限类型：0->目录；1->菜单；2->按钮（接口绑定权限）")
     private Integer type;
 
-    /**
-     * 前端资源路径
-     *
-     * @mbggenerated
-     */
+    @Schema(title = "前端资源路径")
     private String uri;
 
-    /**
-     * 启用状态；0->禁用；1->启用
-     *
-     * @mbggenerated
-     */
+    @Schema(title = "启用状态；0->禁用；1->启用")
     private Integer status;
 
-    /**
-     * 创建时间
-     *
-     * @mbggenerated
-     */
+    @Schema(title = "创建时间")
     private Date createTime;
 
-    /**
-     * 排序
-     *
-     * @mbggenerated
-     */
+    @Schema(title = "排序")
     private Integer sort;
 
     private static final long serialVersionUID = 1L;

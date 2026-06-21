@@ -1,71 +1,36 @@
 package com.macro.mall.model;
 
+import io.swagger.v3.oas.annotations.media.Schema;
 import java.io.Serializable;
 
 public class OmsCompanyAddress implements Serializable {
     private Long id;
 
-    /**
-     * 地址名称
-     *
-     * @mbggenerated
-     */
+    @Schema(title = "地址名称")
     private String addressName;
 
-    /**
-     * 默认发货地址：0->否；1->是
-     *
-     * @mbggenerated
-     */
+    @Schema(title = "默认发货地址：0->否；1->是")
     private Integer sendStatus;
 
-    /**
-     * 是否默认收货地址：0->否；1->是
-     *
-     * @mbggenerated
-     */
+    @Schema(title = "是否默认收货地址：0->否；1->是")
     private Integer receiveStatus;
 
-    /**
-     * 收发货人姓名
-     *
-     * @mbggenerated
-     */
+    @Schema(title = "收发货人姓名")
     private String name;
 
-    /**
-     * 收货人电话
-     *
-     * @mbggenerated
-     */
+    @Schema(title = "收货人电话")
     private String phone;
 
-    /**
-     * 省/直辖市
-     *
-     * @mbggenerated
-     */
+    @Schema(title = "省/直辖市")
     private String province;
 
-    /**
-     * 市
-     *
-     * @mbggenerated
-     */
+    @Schema(title = "市")
     private String city;
 
-    /**
-     * 区
-     *
-     * @mbggenerated
-     */
+    @Schema(title = "区")
     private String region;
 
-    /**
-     * 详细地址
-     *
-     * @mbggenerated
-     */
+    @Schema(title = "详细地址")
     private String detailAddress;
 
     private static final long serialVersionUID = 1L;

@@ -1,5 +1,6 @@
 package com.macro.mall.model;
 
+import io.swagger.v3.oas.annotations.media.Schema;
 import java.io.Serializable;
 import java.math.BigDecimal;
 
@@ -8,36 +9,20 @@ public class PmsFeightTemplate implements Serializable {
 
     private String name;
 
-    /**
-     * 计费类型:0->按重量；1->按件数
-     *
-     * @mbggenerated
-     */
+    @Schema(title = "计费类型:0->按重量；1->按件数")
     private Integer chargeType;
 
-    /**
-     * 首重kg
-     *
-     * @mbggenerated
-     */
+    @Schema(title = "首重kg")
     private BigDecimal firstWeight;
 
-    /**
-     * 首费（元）
-     *
-     * @mbggenerated
-     */
+    @Schema(title = "首费（元）")
     private BigDecimal firstFee;
 
     private BigDecimal continueWeight;
 
     private BigDecimal continmeFee;
 
-    /**
-     * 目的地（省、市）
-     *
-     * @mbggenerated
-     */
+    @Schema(title = "目的地（省、市）")
     private String dest;
 
     private static final long serialVersionUID = 1L;

@@ -1,5 +1,6 @@
 package com.macro.mall.model;
 
+import io.swagger.v3.oas.annotations.media.Schema;
 import java.io.Serializable;
 
 public class CmsTopicCategory implements Serializable {
@@ -7,18 +8,10 @@ public class CmsTopicCategory implements Serializable {
 
     private String name;
 
-    /**
-     * 分类图标
-     *
-     * @mbggenerated
-     */
+    @Schema(title = "分类图标")
     private String icon;
 
-    /**
-     * 专题数量
-     *
-     * @mbggenerated
-     */
+    @Schema(title = "专题数量")
     private Integer subjectCount;
 
     private Integer showStatus;

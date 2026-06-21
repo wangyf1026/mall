@@ -1,5 +1,6 @@
 package com.macro.mall.model;
 
+import io.swagger.v3.oas.annotations.media.Schema;
 import java.io.Serializable;
 import java.util.Date;
 
@@ -12,48 +13,24 @@ public class SmsCouponHistory implements Serializable {
 
     private String couponCode;
 
-    /**
-     * 领取人昵称
-     *
-     * @mbggenerated
-     */
+    @Schema(title = "领取人昵称")
     private String memberNickname;
 
-    /**
-     * 获取类型：0->后台赠送；1->主动获取
-     *
-     * @mbggenerated
-     */
+    @Schema(title = "获取类型：0->后台赠送；1->主动获取")
     private Integer getType;
 
     private Date createTime;
 
-    /**
-     * 使用状态：0->未使用；1->已使用；2->已过期
-     *
-     * @mbggenerated
-     */
+    @Schema(title = "使用状态：0->未使用；1->已使用；2->已过期")
     private Integer useStatus;
 
-    /**
-     * 使用时间
-     *
-     * @mbggenerated
-     */
+    @Schema(title = "使用时间")
     private Date useTime;
 
-    /**
-     * 订单编号
-     *
-     * @mbggenerated
-     */
+    @Schema(title = "订单编号")
     private Long orderId;
 
-    /**
-     * 订单号码
-     *
-     * @mbggenerated
-     */
+    @Schema(title = "订单号码")
     private String orderSn;
 
     private static final long serialVersionUID = 1L;

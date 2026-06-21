@@ -1,5 +1,6 @@
 package com.macro.mall.model;
 
+import io.swagger.v3.oas.annotations.media.Schema;
 import java.io.Serializable;
 import java.util.Date;
 
@@ -8,123 +9,55 @@ public class UmsMember implements Serializable {
 
     private Long memberLevelId;
 
-    /**
-     * 用户名
-     *
-     * @mbggenerated
-     */
+    @Schema(title = "用户名")
     private String username;
 
-    /**
-     * 密码
-     *
-     * @mbggenerated
-     */
+    @Schema(title = "密码")
     private String password;
 
-    /**
-     * 昵称
-     *
-     * @mbggenerated
-     */
+    @Schema(title = "昵称")
     private String nickname;
 
-    /**
-     * 手机号码
-     *
-     * @mbggenerated
-     */
+    @Schema(title = "手机号码")
     private String phone;
 
-    /**
-     * 帐号启用状态:0->禁用；1->启用
-     *
-     * @mbggenerated
-     */
+    @Schema(title = "帐号启用状态:0->禁用；1->启用")
     private Integer status;
 
-    /**
-     * 注册时间
-     *
-     * @mbggenerated
-     */
+    @Schema(title = "注册时间")
     private Date createTime;
 
-    /**
-     * 头像
-     *
-     * @mbggenerated
-     */
+    @Schema(title = "头像")
     private String icon;
 
-    /**
-     * 性别：0->未知；1->男；2->女
-     *
-     * @mbggenerated
-     */
+    @Schema(title = "性别：0->未知；1->男；2->女")
     private Integer gender;
 
-    /**
-     * 生日
-     *
-     * @mbggenerated
-     */
+    @Schema(title = "生日")
     private Date birthday;
 
-    /**
-     * 所做城市
-     *
-     * @mbggenerated
-     */
+    @Schema(title = "所做城市")
     private String city;
 
-    /**
-     * 职业
-     *
-     * @mbggenerated
-     */
+    @Schema(title = "职业")
     private String job;
 
-    /**
-     * 个性签名
-     *
-     * @mbggenerated
-     */
+    @Schema(title = "个性签名")
     private String personalizedSignature;
 
-    /**
-     * 用户来源
-     *
-     * @mbggenerated
-     */
+    @Schema(title = "用户来源")
     private Integer sourceType;
 
-    /**
-     * 积分
-     *
-     * @mbggenerated
-     */
+    @Schema(title = "积分")
     private Integer integration;
 
-    /**
-     * 成长值
-     *
-     * @mbggenerated
-     */
+    @Schema(title = "成长值")
     private Integer growth;
 
-    /**
-     * 剩余抽奖次数
-     *
-     * @mbggenerated
-     */
+    @Schema(title = "剩余抽奖次数")
     private Integer luckeyCount;
 
-    /**
-     * 历史积分数量
-     *
-     * @mbggenerated
-     */
+    @Schema(title = "历史积分数量")
     private Integer historyIntegration;
 
     private static final long serialVersionUID = 1L;

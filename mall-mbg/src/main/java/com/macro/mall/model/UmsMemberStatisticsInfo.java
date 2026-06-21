@@ -1,5 +1,6 @@
 package com.macro.mall.model;
 
+import io.swagger.v3.oas.annotations.media.Schema;
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Date;
@@ -9,60 +10,28 @@ public class UmsMemberStatisticsInfo implements Serializable {
 
     private Long memberId;
 
-    /**
-     * 累计消费金额
-     *
-     * @mbggenerated
-     */
+    @Schema(title = "累计消费金额")
     private BigDecimal consumeAmount;
 
-    /**
-     * 订单数量
-     *
-     * @mbggenerated
-     */
+    @Schema(title = "订单数量")
     private Integer orderCount;
 
-    /**
-     * 优惠券数量
-     *
-     * @mbggenerated
-     */
+    @Schema(title = "优惠券数量")
     private Integer couponCount;
 
-    /**
-     * 评价数
-     *
-     * @mbggenerated
-     */
+    @Schema(title = "评价数")
     private Integer commentCount;
 
-    /**
-     * 退货数量
-     *
-     * @mbggenerated
-     */
+    @Schema(title = "退货数量")
     private Integer returnOrderCount;
 
-    /**
-     * 登录次数
-     *
-     * @mbggenerated
-     */
+    @Schema(title = "登录次数")
     private Integer loginCount;
 
-    /**
-     * 关注数量
-     *
-     * @mbggenerated
-     */
+    @Schema(title = "关注数量")
     private Integer attendCount;
 
-    /**
-     * 粉丝数量
-     *
-     * @mbggenerated
-     */
+    @Schema(title = "粉丝数量")
     private Integer fansCount;
 
     private Integer collectProductCount;
@@ -75,11 +44,7 @@ public class UmsMemberStatisticsInfo implements Serializable {
 
     private Integer inviteFriendCount;
 
-    /**
-     * 最后一次下订单时间
-     *
-     * @mbggenerated
-     */
+    @Schema(title = "最后一次下订单时间")
     private Date recentOrderTime;
 
     private static final long serialVersionUID = 1L;

@@ -1,5 +1,6 @@
 package com.macro.mall.model;
 
+import io.swagger.v3.oas.annotations.media.Schema;
 import java.io.Serializable;
 import java.util.Date;
 
@@ -14,11 +15,7 @@ public class SmsFlashPromotionLog implements Serializable {
 
     private String productName;
 
-    /**
-     * 会员订阅时间
-     *
-     * @mbggenerated
-     */
+    @Schema(title = "会员订阅时间")
     private Date subscribeTime;
 
     private Date sendTime;

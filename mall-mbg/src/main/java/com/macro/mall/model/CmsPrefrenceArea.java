@@ -1,5 +1,6 @@
 package com.macro.mall.model;
 
+import io.swagger.v3.oas.annotations.media.Schema;
 import java.io.Serializable;
 
 public class CmsPrefrenceArea implements Serializable {
@@ -13,11 +14,7 @@ public class CmsPrefrenceArea implements Serializable {
 
     private Integer showStatus;
 
-    /**
-     * 展示图片
-     *
-     * @mbggenerated
-     */
+    @Schema(title = "展示图片")
     private byte[] pic;
 
     private static final long serialVersionUID = 1L;

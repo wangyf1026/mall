@@ -1,5 +1,6 @@
 package com.macro.mall.model;
 
+import io.swagger.v3.oas.annotations.media.Schema;
 import java.io.Serializable;
 import java.util.Date;
 
@@ -16,41 +17,21 @@ public class CmsTopic implements Serializable {
 
     private Date endTime;
 
-    /**
-     * 参与人数
-     *
-     * @mbggenerated
-     */
+    @Schema(title = "参与人数")
     private Integer attendCount;
 
-    /**
-     * 关注人数
-     *
-     * @mbggenerated
-     */
+    @Schema(title = "关注人数")
     private Integer attentionCount;
 
     private Integer readCount;
 
-    /**
-     * 奖品名称
-     *
-     * @mbggenerated
-     */
+    @Schema(title = "奖品名称")
     private String awardName;
 
-    /**
-     * 参与方式
-     *
-     * @mbggenerated
-     */
+    @Schema(title = "参与方式")
     private String attendType;
 
-    /**
-     * 话题内容
-     *
-     * @mbggenerated
-     */
+    @Schema(title = "话题内容")
     private String content;
 
     private static final long serialVersionUID = 1L;

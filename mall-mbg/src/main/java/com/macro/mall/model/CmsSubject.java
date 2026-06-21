@@ -1,5 +1,6 @@
 package com.macro.mall.model;
 
+import io.swagger.v3.oas.annotations.media.Schema;
 import java.io.Serializable;
 import java.util.Date;
 
@@ -10,18 +11,10 @@ public class CmsSubject implements Serializable {
 
     private String title;
 
-    /**
-     * 专题主图
-     *
-     * @mbggenerated
-     */
+    @Schema(title = "专题主图")
     private String pic;
 
-    /**
-     * 关联产品数量
-     *
-     * @mbggenerated
-     */
+    @Schema(title = "关联产品数量")
     private Integer productCount;
 
     private Integer recommendStatus;
@@ -34,34 +27,18 @@ public class CmsSubject implements Serializable {
 
     private Integer commentCount;
 
-    /**
-     * 画册图片用逗号分割
-     *
-     * @mbggenerated
-     */
+    @Schema(title = "画册图片用逗号分割")
     private String albumPics;
 
     private String description;
 
-    /**
-     * 显示状态：0->不显示；1->显示
-     *
-     * @mbggenerated
-     */
+    @Schema(title = "显示状态：0->不显示；1->显示")
     private Integer showStatus;
 
-    /**
-     * 转发数
-     *
-     * @mbggenerated
-     */
+    @Schema(title = "转发数")
     private Integer forwardCount;
 
-    /**
-     * 专题分类名称
-     *
-     * @mbggenerated
-     */
+    @Schema(title = "专题分类名称")
     private String categoryName;
 
     private String content;
